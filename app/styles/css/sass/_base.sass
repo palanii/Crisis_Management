@@ -1,2 +1,88 @@
 \::-webkit-input-placeholder
 	color: $light-grey
+
+.ellipsis
+	overflow: hidden
+	white-space: nowrap
+	text-overflow: ellipsis
+
+.list-group
+	padding-left: 0
+	margin-bottom: 50px
+
+.list-group-item
+	+border($grey3)
+	height: 115px
+	padding: 19px 23px 0
+	margin-bottom: -2px
+
+body
+	background-color: $grey-background
+
+.cms-centerText
+	text-align: center
+
+.cms-hideElement
+	visibility: hidden
+
+.cms-removeElement
+	display: none
+
+@font-face
+	font-family: $std-font-normal
+	src: url('../fonts/HelveticaNeue.ttf')
+
+
+@font-face
+	font-family: $std-font-light
+	src: url('../fonts/HelveticaNeue-Light.ttf')
+
+
+@font-face
+	font-family: $std-font-ultra-light
+	src: url('../fonts/HelveticaNeue-UltraLight.ttf')
+
+
+@font-face
+	font-family: $std-font-thin
+	src: url('../fonts/HelveticaNeue-Thin.otf')
+
+
+.cms-errorMessageContainer
+	color: $error-text
+	padding: 5px 3px auto
+	font-size: 12px
+
+.cms-alert
+	width: 98%
+	margin: 5px auto 5px 3px
+	padding: 6px
+	position: absolute
+	z-index: 1033
+	border-radius: 0px
+	border: none
+
+.cms-alert-close
+	margin-top: -5px
+	position: initial !important
+
+.cms-alert-closeIcon
+	font-size: 25px
+
+.cms-pushdown-search-nav
+	margin-top: 105px !important
+
+.cms-loader-spinner
+	content: url('../../images/loader.svg')
+	padding-top: 90%
+	padding-left: 40%
+
+.cms-loader-container
+	position: fixed
+	z-index: 1035
+	min-height: 100%
+	min-width: 100%
+	background: rgba(0, 0, 0, 0.3)
+	align: center
+	top: 0
+	left: 0
