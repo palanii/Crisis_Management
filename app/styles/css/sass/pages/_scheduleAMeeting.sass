@@ -1,0 +1,107 @@
+.cms-scheduleMeeting-inputElement
+  height: 40px
+  padding: 5px 0 0 10px
+  border-radius: 5px
+  font-style: normal
+  +border($grey5)
+
+.cms-scheduleMeeting-inputElementLabel
+  font-weight: normal
+
+.cms-selectTeam-teamSeparator
+  height: 1px
+  +border-position('bottom', $grey6)
+  padding-top: 10px
+
+.cms-selectTeam-teamName
+  padding-top: 10px
+
+.cms-scheduleMeeting-container
+  font-family: "HelveticaNeue"
+  padding: 20px 15px 20px 15px
+  font-size: $content_container_size
+  color: $grey7
+  background-color: $grey4
+  width: 100%
+  margin-bottom: 50px
+
+.cms-scheduleMeeting-rowContainer
+  padding-top: 14px
+
+.cms-scheduleMeeting-separationContainer
+  padding-top: 5px
+
+.cms-scheduleMeeting-meetingSubject
+  width: 100%
+
+.cms-scheduleMeeting-toDateContainer
+  padding-left: 3px
+
+.cms-scheduleMeeting-fromDate, .cms-scheduleMeeting-toDate
+  width: 140px
+  background: $white url("../../images/calendar.svg") 96% no-repeat
+  background-size: 23px 23px
+  vertical-align: middle
+
+.cms-scheduleMeeting-meetingMessage
+  height: 95px
+  width: 100%
+  overflow-y: scroll
+
+.cms-scheduleMeeting-startMeetingButton
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, $blue), color-stop(1, $blue2))
+  color: $white
+  font-size: $base-font-size
+  line-height: 40px
+  width: 100%
+  text-decoration: none
+  +text-center-n-bold
+  padding-top: 0px
+
+.cms-scheduleMeeting-frequencySelection
+  width: 100%
+  padding-top: 0px
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background: $white url("../../images/dropdown_arrow.svg") 97.5% no-repeat
+  background-size: 20px 20px
+  vertical-align: middle
+
+.cms-scheduleMeeting-meetingTime
+  width: 100%
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  background: $white url("../../images/clock.svg") 97% no-repeat
+  background-size: 23px 23px
+  vertical-align: middle
+
+.cms-scheduleMeetingdropdown-menu
+  min-width: 140px
+
+/* DatePicker Custom Styling
+
+ul.dropdown-menu
+  left: 15px !important
+  z-index: 1030
+
+/* End DatePicker Custom Styling
+
+/* TimePicker Custom Styling
+
+.cms-scheduleMeeting-timePickerContainer table
+  margin-left: 4px
+  .btn-link
+    color: $grey8
+
+.cms-scheduleMeeting-disabledControl
+  pointer-events: none
+
+.cms-scheduleMeeting-dateError
+  margin-left: 16px
+
+table
+  margin-left: 18px
+
+/* End TimePicker Custom Styling
