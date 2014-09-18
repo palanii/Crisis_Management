@@ -1,6 +1,6 @@
 .cms-home-container
   height: 100%
-  margin-top: -54px
+  margin-top: -54px/*not needed for border boxing*/
   padding-top: 54px
 
 .cms-home-heading
@@ -43,7 +43,7 @@
   margin: 7px $zero $zero 55px
   background-color: $red1
   padding: 4px
-  border-radius: 22px
+  border-radius: $badge-radius
   +border($grey4, 3px)
   width: $badge-size
   height: $badge-size
@@ -51,12 +51,7 @@
 
 /* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution
 
-@media (min-device-width: 720px) and (min-device-height: 1080px)
-  .cms-home-group-item
-    height: 145px !important
-    padding: 35px $list-side-spacing !important
-
-@media (min-device-width: 1080px) and (min-device-height: 1920px)
+@media (min-device-width: 720px) and (min-device-height: 1080px) , (min-device-width: 1080px) and (min-device-height: 1920px)
   .cms-home-group-item
     height: 145px !important
     padding: 35px $list-side-spacing !important
