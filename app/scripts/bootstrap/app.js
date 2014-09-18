@@ -1,28 +1,10 @@
 /* Master app file. Contains global factories,routes and bootstrapping commands. */
 
-var selectTeamNavigation = undefined;
-var appModules =  undefined;
-var  pageTitles = undefined;
-var mockingDataLocations = undefined;
-var serverDataLocations = undefined;
-var isDevMode = undefined;
-var cscContactNumber = undefined;
-
 /* Configuration of the application with routes and templates to load for the routes. */
 (function()
 {
-    crisisMgmtApp.config(function($routeProvider, $controllerProvider, $compileProvider, $filterProvider, $provide,crisisMgmtConfig)
+    crisisMgmtApp.config(function($routeProvider, $controllerProvider, $compileProvider, $filterProvider, $provide)
     {
-
-        //Assign config values to global file
-        selectTeamNavigation=crisisMgmtConfig.selectTeamNavigation;
-        appModules=crisisMgmtConfig.appModules;
-        pageTitles=crisisMgmtConfig.pageTitles;
-        mockingDataLocations=crisisMgmtConfig.mockingDataLocations;
-        serverDataLocations=crisisMgmtConfig.serverDataLocations;
-        isDevMode=crisisMgmtConfig.isDevMode;
-        cscContactNumber=crisisMgmtConfig.cscContactNumber;
-
         // Let's keep the older references.
         crisisMgmtApp._controller = crisisMgmtApp.controller;
         crisisMgmtApp._service = crisisMgmtApp.service;
@@ -114,23 +96,26 @@ getUniqueAlphabetsToSort = function (itemsList,filterProperty) {
 };
 
 
-$(document).on('focus', 'input[type="text"],input[type="password"],textarea,select', function(e) {
+$(document).on('focus', 'input[type="text"],input[type="password"],input[type="date"],input[type="number"],textarea,select', function(e) {
     $('.cms-login-headerLabel').hide();
     $('.cms-login-headerLabelPart2').hide();
     $('.cms-footer').hide();
     $('.navbar.navbar-fixed-top').css('position', 'absolute');
     $('.cms-header-headerContainer').css('position','absolute');
 
-    document.ontouchmove = function(event){ event.preventDefault(); }
+    document.ontouchmove = function(event){ event.preventDefault(); };
+});
 
-})
 
-
-$(document).on('blur', 'input[type="text"],input[type="password"], textarea,select', function() {
+$(document).on('blur', 'input[type="text"],input[type="password"],input[type="date"],input[type="number"],textarea,select', function() {
     $('.cms-login-headerLabel').show();
     $('.cms-login-headerLabelPart2').show();
     $('.cms-footer').show();
     $('.navbar.navbar-fixed-top').css('position', 'fixed');
     $('.cms-header-headerContainer').css('position','fixed');
-    document.ontouchmove = function(event){ return true; }
+    document.ontouchmove = function(event){ return true; };
 });
+
+
+
+

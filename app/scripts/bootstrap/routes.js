@@ -21,9 +21,10 @@ var config = (function() {
             },
             '/home': {
                 templateUrl: 'views/home.html',
-                styleSheet: 'styles/css/home.css',
                 dependencies: [
-                    'controllers/home.js'
+                    'controllers/home.js',
+                    'services/activeCrisisService.js',
+                    'services/teamService.js'
                 ]
             },
             '/mapView': {
@@ -81,7 +82,8 @@ var config = (function() {
                 templateUrl: 'views/notifyTeamLeadership.html',
                 styleSheet: 'styles/css/notifyTeamLeadership.css',
                 dependencies: [
-                    'controllers/notifyTeamLeadership.js'
+                    'controllers/notifyTeamLeadership.js',
+                    'services/notifyTeamLeadershipService.js'
                 ]
             },
 
@@ -126,7 +128,8 @@ var config = (function() {
                 templateUrl: 'views/requestResiliencySupport.html',
                 styleSheet: 'styles/css/requestResiliencySupport.css',
                 dependencies: [
-                    'controllers/requestResiliencySupport.js'
+                    'controllers/requestResiliencySupport.js',
+                    'services/requestResiliencyService.js'
                 ]
             },
 
@@ -134,7 +137,8 @@ var config = (function() {
                 templateUrl: 'views/viewDocumentsList.html',
                 styleSheet: 'styles/css/viewDocumentsList.css',
                 dependencies: [
-                    'controllers/viewDocumentsList.js'
+                    'controllers/viewDocumentsList.js',
+                    'services/policiesService.js'
                 ]
             },
 
@@ -143,7 +147,8 @@ var config = (function() {
                 templateUrl: 'views/scheduleAMeeting.html',
                 styleSheet: 'styles/css/scheduleAMeeting.css',
                 dependencies: [
-                    'controllers/scheduleAMeeting.js'
+                    'controllers/scheduleAMeeting.js',
+                    'services/meetingService.js'
                 ]
             },
 
@@ -151,7 +156,8 @@ var config = (function() {
                 templateUrl: 'views/scheduledMeeting.html',
                 styleSheet: 'styles/css/scheduledMeeting.css',
                 dependencies: [
-                    'controllers/scheduledMeeting.js'
+                    'controllers/scheduledMeeting.js',
+                    'services/meetingService.js'
                 ]
             }
         }
