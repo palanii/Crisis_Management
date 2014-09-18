@@ -49,7 +49,6 @@ var config = (function() {
             },
             '/crisisListView': {
                 templateUrl: 'views/crisisListView.html',
-                styleSheet: 'styles/css/crisisListView.css',
                 dependencies: [
                     'controllers/crisisListView.js'
                 ]
