@@ -1,0 +1,92 @@
+.cms-searchTeam-content {
+    font-family:"HelveticaNeue";
+    color:#000;
+    padding-top:46px;
+}
+
+.cms-selectTeam-searchContainer {
+    height:50px;
+    background-color:#d8dde1;
+    padding:8px;
+    border: 1px solid #d2d4d6;
+}
+
+.cms-selectTeam-searchBox {
+    width:100%;
+    border-radius:4px;
+    padding-top:7px;
+    border:1px;
+}
+
+.cms-selectTeam-searchIcon {
+    background-size:17px;
+    background: #ffffff url('../../images/search.svg') no-repeat 36%;
+    background-size: 17px;
+}
+
+.cms-selectTeam-searchBox::-webkit-input-placeholder {
+    text-align:center;
+    font-family:"HelveticaNeue";
+    font-size:15px;
+    color:#8e8e93;
+}
+
+.cms-selectTeam-searchBox:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+.cms-selectTeam-searchIcon:focus {
+    background-image:none;
+}
+
+.cms-selectTeam-headerRow {
+    background-color:#ECF0F3;
+    font-size:17px;
+    color:#0064D2;
+    font-weight:700;
+    padding:0;
+    height:auto;
+}
+
+.cms-selectTeam-otherRow {
+    height:44px;
+    font-size:14px;
+    font-weight:400;
+    color:#000;
+    cursor:pointer;
+    padding:12px 0 0 15px;
+}
+
+.cms-searchTeam-availableTeams {
+    padding:12px 0 0 15px;
+}
+
+.cms-selectTeam-listSelectIcon {
+    background-image:url('../../images/list_select_bg.png');
+    color:#FFF;
+}
+
+.cms-searchTeam-content .list-group-item:first-child,.crisis-mgmt-searchTeam-content .list-group-item:last-child {
+    border-radius:0;
+}
+
+.cms-selectTeam-searchNav
+{
+    margin-top:60px;
+}
+
+input::-webkit-input-placeholder{
+    color:red !important;
+}
+input::-webkit-input-placeholder {
+    color:red !important;
+}
+input::-moz-placeholder {
+    color:red !important;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+    color:red !important;
+}
+input:-ms-input-placeholder { 
+    color:red !important;
+}

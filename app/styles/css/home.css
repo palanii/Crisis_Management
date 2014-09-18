@@ -1,0 +1,57 @@
+.cms-home-container {
+    height: 100%;
+    margin-top: -54px;
+    padding-top: 54px;
+}
+
+.cms-home-heading
+{
+    font-family:"HelveticaNeue";
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 23px;
+    padding-top: 25px;
+}
+
+.cms-home-list {
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+
+.cms-home-group-item{
+    background-color:#eeeff1;
+
+}
+
+.cms-home-listImageContainer{
+    float: left;
+    position: relative;
+}
+
+.cms-home-listImageText{
+    float: left;
+    position: relative;
+    color: #000000;
+    width: 70%;
+    font-family:"HelveticaNeue-Light";
+    font-size:18px;
+    padding-top: 20px;
+}
+
+.cms-home-headingIcon{
+    height: 75px;
+    width: 75px;
+}
+
+.badge{
+    font-family: "HelveticaNeue-Light";
+    position: absolute;
+    margin: 7px 0 0 55px;
+    background-color: #e62828;
+    padding: 4px;
+    border-radius: 22px;
+    border: 3px #eeeff1 solid;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}

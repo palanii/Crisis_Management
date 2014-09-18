@@ -1,0 +1,11 @@
+node_modules/
+app/images/
+app/data/login.json
+app/data/
+app/directives/
+app/controllers/
+app/views/
+app/templates/
+app/services/
+.sass-cache/
+app/filters/

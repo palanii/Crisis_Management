@@ -1,0 +1,73 @@
+.cms-sendAlert-text
+{
+    font-size: 14px;
+    color: #4e4d4c;
+}
+
+
+.cms-sendAlert-sectionHeading
+{
+    font-weight:bold;
+}
+
+.cms-sendAlert-divider{
+    border-top: 1px solid #cccccc;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.cms-sendAlert-pageContainer
+{
+    background-color: rgb(222, 225, 228);
+    padding: 20px 15px 20px 15px;
+}
+
+.cms-sendAlert-message
+{
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-weight: normal;
+    font-size: 13px;
+    height: 245px;
+    color: #6f7a80;
+    border:1px solid #d2d4d6;
+    line-height: 23px;
+
+}
+
+
+.sendAlertBoldText
+{
+    font-weight: bold;
+    color: #4e4d4c;
+}
+
+.cms-sendAlert-messageLabel{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+.cms-sendAlert-sendAlertButton{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #273ef6), color-stop(1, #0354a2) );
+    background-color: #0354a2;
+    border-radius:5px;
+    display:inline-block;
+    color:#ffffff;
+    font-family:sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width: 100%;
+    text-decoration:none;
+    text-align:center;
+    margin-top: 18px;
+}
+
+
+
+
+

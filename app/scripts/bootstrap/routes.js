@@ -1,0 +1,159 @@
+/* Contains route configurations for the various pages to be traversed.
+ * Following properties are needed
+ * templateURl: The html template to feed to the main view
+ * css: the stylesheet for the template
+ * dependencies: controller files and any other files to be loaded by the $script loader*/
+var config = (function() {
+    return {
+        defaultRoutePath: '/',
+        routes: {
+            '/': {
+                templateUrl: 'views/login.html',
+                dependencies: [
+                    'controllers/login.js'
+                ]
+            },
+            '/login': {
+                templateUrl: 'views/login.html',
+                dependencies: [
+                    'controllers/login.js'
+                ]
+            },
+            '/home': {
+                templateUrl: 'views/home.html',
+                styleSheet: 'styles/css/home.css',
+                dependencies: [
+                    'controllers/home.js'
+                ]
+            },
+            '/mapView': {
+                templateUrl: 'views/mapView.html',
+                styleSheet: [
+                    'styles/css/leaflet.css',
+                    'styles/css/mapView.css'
+                ],
+                dependencies: [
+                    'services/activeCrisisService.js',
+                    'scripts/vendors/leaflet.js',
+                    'controllers/mapController.js'
+
+                ]
+            },
+            '/crisisDetail': {
+                templateUrl: 'views/crisisDetailView.html',
+                styleSheet: 'styles/css/crisisDetail.css',
+                dependencies: [
+                    'controllers/crisisDetail.js'
+                ]
+            },
+            '/crisisListView': {
+                templateUrl: 'views/crisisListView.html',
+                styleSheet: 'styles/css/crisisListView.css',
+                dependencies: [
+                    'controllers/crisisListView.js'
+                ]
+            },
+            '/selectTeam': {
+                templateUrl: 'views/selectTeam.html',
+                styleSheet: 'styles/css/selectTeam.css',
+                dependencies: [
+                    'controllers/selectTeam.js',
+                    'services/teamService.js'
+                ]
+            },
+            '/respondToCrisis': {
+                templateUrl: 'views/respondToCrisis.html',
+                styleSheet: 'styles/css/respondToCrisis.css',
+                dependencies: [
+                    'controllers/respondToCrisis.js'
+                ]
+            },
+
+            '/respondToCrisisLeadership': {
+                templateUrl: 'views/respondToCrisisLeadership.html',
+                styleSheet: 'styles/css/respondToCrisisLeadership.css',
+                dependencies: [
+                    'controllers/respondToCrisisLeadership.js'
+                ]
+            },
+
+            '/notifyTeamLeadership': {
+                templateUrl: 'views/notifyTeamLeadership.html',
+                styleSheet: 'styles/css/notifyTeamLeadership.css',
+                dependencies: [
+                    'controllers/notifyTeamLeadership.js'
+                ]
+            },
+
+            '/sendAlert': {
+                templateUrl: 'views/sendAlert.html',
+                styleSheet: 'styles/css/sendAlert.css',
+                dependencies: [
+                    'controllers/sendAlert.js',
+                    'services/sendAlertService.js'
+                ]
+            },
+            '/initiateConference': {
+                templateUrl: 'views/initiateConference.html',
+                styleSheet: 'styles/css/initiateConference.css',
+                dependencies: [
+                    'controllers/initiateConference.js'
+                ]
+            },
+            '/walletCardList': {
+                templateUrl: 'views/walletCardList.html',
+                styleSheet: 'styles/css/walletCardList.css',
+                dependencies: [
+                    'controllers/walletCardList.js'
+                ]
+            },
+            '/viewWalletCard': {
+                templateUrl: 'views/viewWalletCard.html',
+                styleSheet: 'styles/css/viewWalletCard.css',
+                dependencies: [
+                    'controllers/viewWalletCard.js'
+                ]
+            },
+            '/selectTeamForWalletCard': {
+                templateUrl: 'views/selectTeamForWalletCard.html',
+                styleSheet: 'styles/css/selectTeam.css',
+                dependencies: [
+                    'controllers/selectTeam.js',
+                    'services/teamService.js'
+                ]
+            },
+            '/requestResiliencySupport': {
+                templateUrl: 'views/requestResiliencySupport.html',
+                styleSheet: 'styles/css/requestResiliencySupport.css',
+                dependencies: [
+                    'controllers/requestResiliencySupport.js'
+                ]
+            },
+
+            '/viewDocumentsList': {
+                templateUrl: 'views/viewDocumentsList.html',
+                styleSheet: 'styles/css/viewDocumentsList.css',
+                dependencies: [
+                    'controllers/viewDocumentsList.js'
+                ]
+            },
+
+
+            '/scheduleAMeeting': {
+                templateUrl: 'views/scheduleAMeeting.html',
+                styleSheet: 'styles/css/scheduleAMeeting.css',
+                dependencies: [
+                    'controllers/scheduleAMeeting.js'
+                ]
+            },
+
+            '/scheduledMeeting': {
+                templateUrl: 'views/scheduledMeeting.html',
+                styleSheet: 'styles/css/scheduledMeeting.css',
+                dependencies: [
+                    'controllers/scheduledMeeting.js'
+                ]
+            }
+        }
+    };
+})();

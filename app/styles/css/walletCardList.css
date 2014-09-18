@@ -1,0 +1,101 @@
+.cms-wcl-content {
+    font-family:"HelveticaNeue";
+    color:#000;
+    padding-top:40px;
+}
+
+.cms-wcl-searchContainer {
+    height:50px;
+    background-color:#d8dde1;
+    padding:8px;
+}
+
+.cms-wcl-searchBox {
+    width:100%;
+    border-radius:4px;
+    border:1px;
+    padding-top:6px;
+    padding-bottom:8px;
+}
+
+.cms-wcl-searchIcon {
+    background-size:17px;
+    background: #ffffff url('../../images/search.svg') no-repeat 36%;
+    background-size: 17px;
+}
+
+.cms-wcl-searchBox::-webkit-input-placeholder {
+    text-align:center;
+    font-family:"HelveticaNeue";
+    font-size:15px;
+    color:#8e8e93;
+}
+
+.cms-wcl-searchBox:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+.cms-wcl-searchIcon:focus {
+    background-image:none;
+}
+
+.cms-wcl-headerRow {
+    background-color:#ECF0F3;
+    font-size:17px;
+    color:#0064D2;
+    font-weight:700;
+    padding:0;
+    border:0px;
+    font-family:"HelveticaNeue";
+}
+
+.cms-wcl-otherRow {
+    height:44px;
+    font-size:14px;
+    font-weight:400;
+    color:#000;
+    cursor:pointer;
+    padding:12px 15px 0 15px;
+}
+
+.cms-wcl-availableTeams {
+    padding:12px 0 10px 15px;
+}
+
+.cms-wcl-listSelectIcon {
+    background-image:url(../../images/list_select_bg.png);
+    color:#FFF;
+}
+
+.cms-wcl-content .list-group-item:first-child,.cms-wcl-content .list-group-item:last-child {
+    border-radius:0;
+}
+
+.listNav{
+    width: 11px;
+}
+
+.walletCardImage{
+	display:block;
+	float:right;
+	width:5%;
+    vertical-align: middle;
+}
+.walletCardName{
+	display:block;
+	float:left;
+	width:95%;
+	vertical-align: middle;
+}
+
+
+
+.cms-wcl-walletIcon
+{
+    content:url('../../images/walletlist.svg');
+}
+
+.cms-wcl-searchNav
+{
+    margin-top:54px;
+}

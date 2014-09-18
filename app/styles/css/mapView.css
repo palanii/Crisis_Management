@@ -1,0 +1,54 @@
+#map {
+	height: 100%;
+}
+
+.leaflet-popup
+{
+	bottom: 11px;
+    padding-bottom: 15px;
+}
+
+.leaflet-popup-content
+{
+	width: 240px;
+	height: 75px;
+	margin: 2px 15px 2px 15px;
+}
+
+.cms-map-severityBadge
+{
+
+	width: 50px;
+	height: 50px;
+	float: left;
+    content:url('../../images/warning_icon.svg');
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.cms-map-severityValue{
+    display: table-cell;
+    width:90%;
+    padding-left: 10px;
+    height: 80px;
+}
+.cms-map-crisisDurationContainer{
+    display: table-cell;
+    width:15%;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 15px;
+    height: 80px;
+}
+.cms-map-navigationIcon{
+    width: 12px;
+    height:14px;
+    padding-left: 10px;
+    background: url("../../images/map_popover_arrow.svg") right;
+    background-size: 15px;
+    }
+
+.cms-map-crisisDuration{
+    color: #0064d2;
+    padding-left: 5px;
+}

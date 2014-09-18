@@ -1,0 +1,53 @@
+.conferenceTitle {
+text-align: center;
+height: 54px; 
+padding-top: 10px;
+border-bottom: 1px #ffffff solid;
+background-color: #ffffff;
+ width:100%;
+}
+
+.cms-ic-container {
+
+padding-top: 63px;
+background-color: #eeeff1;
+ width:100%;
+ padding-bottom:65%;
+}
+
+.cms-ic-conferenceIcon {
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:180px;
+width:180px;
+background-size: 180px 180px;
+background-image: url("../../images/initiateConference.svg");
+vertical-align: middle;
+
+
+}
+
+.cms-ic-conferenceButton {
+	margin-top: 57px;
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #273ef6), color-stop(1, #0354a2) );
+    background-color: #0354a2;
+    border-radius:5px;
+    display:inline-block;
+    color:#ffffff;
+    font-family:sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width: 90%;
+    text-decoration:none;
+    text-align:center;
+    margin-bottom: 10px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-left: 15px;
+}
+

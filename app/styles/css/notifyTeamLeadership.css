@@ -1,0 +1,105 @@
+.cms-nl-text
+{
+    font-size: 14px;
+    color: #4e4d4c;
+}
+.cms-nl-headingText
+{
+    font-size: 14px;
+    color: #4e4d4c;
+    font-weight: bold;
+    display: table-cell;
+
+}
+.cms-nl-headingValue
+{
+    font-size: 14px;
+    color: #4e4d4c;
+    display: table-cell;
+    padding-left:5px;
+
+}
+
+.cms-nl-sectionHeading{
+    font-weight: bold;
+    font-size: 14px;
+    color: #4e4d4c;
+}
+
+
+.cms-nl-frequencySelection{
+    width: 100%;
+    padding-top:0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white url("../../images/dropdown_arrow.svg") 97.5% no-repeat;
+    background-size: 20px 20px;
+    vertical-align: middle;
+    
+}
+
+.cms-nl-inputElement
+{
+    height:40px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius:5px;
+    font-style:normal;
+    border: 1px solid #E0E4E5;
+}
+
+.cms-nl-button{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #273ef6), color-stop(1, #273ef6) );
+    background:-moz-linear-gradient( center top, #2952F6 5%, #2952F6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2952F6', endColorstr='#273EF6');
+    background-color: #2952F6;
+    border-radius:10px;
+    text-indent:0px;
+    display:inline-block;
+    color:#ffffff;
+    font-family:sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    height:35px;
+    line-height:31px;
+    width: 100%;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:0px 0px 0px #1570cd;
+    margin-top: 20px;
+}
+
+.cms-nl-masterContainer
+{
+    padding: 20px 15px 20px 15px;
+}
+.cms-nl-eventTypeSelect
+{
+    width: 100%;
+}
+.cms-nl-eventTypeContainer{
+    margin-top: 33px;
+    margin-bottom: 5px;
+}
+
+.cms-nl-descriptionTextArea{
+    width: 100%;
+    font-weight: normal;
+    font-size: 13px;
+    height: 125px;
+    color: #6f7a80;
+    padding: 15px 0 0 10px;
+    border: 1px solid #d2d4d6;
+}
+
+.cms-nl-description{
+    margin:22px 0px 8px 0px;
+}
+
+.cms-nl-separator {
+    border-top: 1px solid #cccccc;
+    width: 100%;
+    margin:10px 0 10px 0;
+}
