@@ -9,3 +9,4 @@ app/templates/
 app/services/
 .sass-cache/
 app/filters/
+app/styles/css/main.css
