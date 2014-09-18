@@ -11,28 +11,15 @@
 }
 
 .cms-wcl-searchBox {
-    width:100%;
-    border-radius:4px;
-    border:1px;
-    padding-top:6px;
-    padding-bottom:8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px;
+    line-height: 27px;
 }
 
 .cms-wcl-searchIcon {
-    background-size:17px;
-    background: #ffffff url('../../images/search.svg') no-repeat 36%;
-    background-size: 17px;
-}
-
-.cms-wcl-searchBox::-webkit-input-placeholder {
-    text-align:center;
-    font-family:"HelveticaNeue";
-    font-size:15px;
-    color:#8e8e93;
-}
-
-.cms-wcl-searchBox:focus::-webkit-input-placeholder {
-    color:transparent;
+   background: #ffffff url('../../images/searchBoxText.png') no-repeat 46%;
+   background-size: 69px;
 }
 
 .cms-wcl-searchIcon:focus {
@@ -97,5 +84,5 @@
 
 .cms-wcl-searchNav
 {
-    margin-top:54px;
+    margin-top:58px;
 }

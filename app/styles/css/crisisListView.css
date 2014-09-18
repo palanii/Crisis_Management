@@ -5,6 +5,11 @@
     background-color: #ffffff;
 }
 
+.cms-clv-masterContainer{
+
+    padding-bottom:53px;
+}
+
 .cms-clv-details  {
     display: table-row;
     width: 100%;
@@ -24,15 +29,16 @@
 }
 .cms-clv-crisisListItem{
     display: table-cell;
-    width:60%;
+    width:100px;
     padding-top: 8px;
+    padding-bottom: 12px;
     height: 80px;
 }
 .cms-clv-crisisDurationContainer{
     display: table-cell;
     width:35%;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 20px;
     padding-top: 15px;
     height: 80px;
 }
@@ -61,6 +67,10 @@
 .cms-clv-crisisType{
     font: "HelveticaNeue";
     font-size: 12;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width: 120px;
 }
 .cms-clv-crisisDate{
     font: "HelveticaNeue";
@@ -72,8 +82,13 @@
     font-size: 12;
    
 }
-.cms-clv-crisisDuration{
+.cms-clv-crisisDurationTime{
     font: "HelveticaNeue";
     font-size: 12;
     color: #0064d2;
+}
+
+.cms-clv-crisisDuration{
+    padding-top:8px;
+
 }

@@ -123,4 +123,20 @@ ul.dropdown-menu
 {
     color :#858F93;
 }
+
+.cms-scheduleMeeting-disabledControl
+{
+    pointer-events:none;
+}
+
+.cms-scheduleMeeting-dateError
+{
+    margin-left:16px;
+}
+
+table 
+{
+    margin-left: 18px;
+}
+
 /* End TimePicker Custom Styling */

@@ -63,3 +63,15 @@
 }
 
 
+/* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution */
+
+@media (min-device-width: 720px) and (min-device-height: 1080px) {
+ 
+.cms-rcl-group-item{
+  
+    height: 131px !important;
+                padding: 30px 23px !important;
+}
+ 
+}
+

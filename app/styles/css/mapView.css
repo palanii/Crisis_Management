@@ -11,7 +11,7 @@
 .leaflet-popup-content
 {
 	width: 240px;
-	height: 75px;
+	height: 85px;
 	margin: 2px 15px 2px 15px;
 }
 
@@ -30,6 +30,7 @@
     display: table-cell;
     width:90%;
     padding-left: 10px;
+    padding-top: 10px;
     height: 80px;
 }
 .cms-map-crisisDurationContainer{
@@ -50,5 +51,4 @@
 
 .cms-map-crisisDuration{
     color: #0064d2;
-    padding-left: 5px;
 }

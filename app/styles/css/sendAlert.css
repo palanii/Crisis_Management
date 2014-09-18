@@ -19,20 +19,18 @@
 .cms-sendAlert-pageContainer
 {
     background-color: rgb(222, 225, 228);
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 90px 15px;
 }
 
 .cms-sendAlert-message
 {
     width: 100%;
-    padding-left: 10px;
-    padding-top: 15px;
     font-weight: normal;
     font-size: 13px;
-    height: 245px;
+    height: 165px;
     color: #6f7a80;
-    border:1px solid #d2d4d6;
     line-height: 23px;
+    user-select : none;
 
 }
 
@@ -67,7 +65,21 @@
     margin-top: 18px;
 }
 
+/* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution */
 
+@media (min-device-width: 720px) and (min-device-height: 1080px) {
 
+.cms-sendAlert-pageContainer
+{
+    background-color: rgb(222, 225, 228);
+    padding: 20px 15px 90px 15px;
+}
+ 
+ 
+.cms-sendAlert-sendAlertButton{
+   
+    margin-top: 45px;
+}
+}
 
 

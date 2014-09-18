@@ -91,3 +91,13 @@
     margin-right: 18px;
     
 }
+
+.cms-vwc-mobileIcon{
+    width: 31px;
+    height: 31px;
+    background: url("../../images/mobile-phone.svg") right;
+    background-size: 31px;
+    margin-right: 6px;
+
+    
+}

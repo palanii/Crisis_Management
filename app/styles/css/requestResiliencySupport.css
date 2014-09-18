@@ -29,17 +29,16 @@
     width: 100%;
     text-decoration:none;
     text-align:center;
-    margin-top: 10px;
 }
 
 .cms-rrs-masterContainer
 {
     background-color: #DEE1E4;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 80px 15px;
 }
 
 .cms-rrs-userInfoHeading{
-    margin-top: 22px;
+    margin-top: 12px;
 }
 
 .cms-rrs-problemDescription{
@@ -53,7 +52,7 @@
 }
 
 .cms-rrs-problemDescriptionContainer{
-    margin:26px 0px 5px 0px;
+    margin:6px 0px 5px 0px;
 }
 
 .cms-rrs-requestDivider
@@ -61,4 +60,21 @@
     border-top: 1px solid #cccccc;
     width: 100%;
     margin:5px 0 5px 0;
+}
+
+/* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution */
+
+@media (min-device-width: 720px) and (min-device-height: 1080px) {
+
+.cms-rrs-masterContainer
+{
+
+    padding: 20px 15px 90px 15px;
+}
+ 
+ 
+.cms-rrs-sendAlertButton{
+   
+    margin-top: 45px;
+}
 }
