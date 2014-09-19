@@ -18,6 +18,7 @@
   display: table-cell
   width: 15%
   vertical-align: middle
+  padding: $crisis-item-spacing 0
   padding-left: $crisis-item-spacing
 
 .cms-clv-crisisListItem
@@ -39,7 +40,6 @@
   background-size: $crisis-item-spacing
 
 .cms-clv-crisisSeverityBadge
-  //padding-top: 10px
   width: 100%
   vertical-align: middle
   content: url('../../images/warning_icon.svg')
@@ -47,23 +47,23 @@
 .cms-clv-crisisSeverityData 
   // need to revisit
   text-align: center
-  font: $std-font-normal
-  font-size: $heading-font-size//was 21
+  font-family: $std-font-normal
+  font-size: $content_large_font
   color: $white
   vertical-align: middle
   line-height: 23px
 
 .cms-clv-crisisType
-  font: $std-font-normal
+  font-family: $std-font-normal
   font-size: $content-font-size
   @extend .ellipsis
 
 .cms-clv-crisisDate, .cms-clv-crisisTime
-  font: $std-font-normal
+  font-family: $std-font-normal
   font-size: $content-font-size
 
 .cms-clv-crisisDurationTime
-  font: $std-font-normal
+  font-family: $std-font-normal
   font-size: $content-font-size
   color: $blue
 

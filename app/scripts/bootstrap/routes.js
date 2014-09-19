@@ -42,7 +42,6 @@ var config = (function() {
             },
             '/crisisDetail': {
                 templateUrl: 'views/crisisDetailView.html',
-                styleSheet: 'styles/css/crisisDetail.css',
                 dependencies: [
                     'controllers/crisisDetail.js'
                 ]
