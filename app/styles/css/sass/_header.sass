@@ -1,59 +1,41 @@
-.cms-header
-  height: 64px
-  border-bottom: 1px solid $grey1
-
 .cms-header-headerContainer
   background: $white
-  padding-bottom: 14px
+  +border-position('bottom', $grey1)
+  padding: 15px 10px
+  text-align: center
 
 .cms-header-pageTitle
-  padding: 24px 0 0 20px
   font-size: $title_font_size
   color: $blue
-  +text-center-n-bold
-  width: 62%
-  float: left
+  font-weight: bold
   +text-ellipsis
-  font-family: "HelveticaNeue"
-
-.cms-header-alertIcon, .cms-header-alertIconActive, .cms-header-crisisListIcon
-  padding-top: 20px
+  font-family: $std-font-normal
+  display: inline-block
+  width: 70%
 
 .cms-header-alertIcon
   width: 25px
-  +float-right-10
   content: url('../../images/Icon_alert.svg')
 
 .cms-header-alertIconActive
   width: 25px
-  +float-right-10
   content: url('../../images/Icon_alert_active.svg')
 
 .cms-header-backButton
   width: 25px
-  +float-right-10
   content: url('../../images/Icon_back.svg')
 
 .cms-header-crisisListIcon
   width: 25px
-  +float-right-10
   content: url('../../images/Icon_list.svg')
 
 .cms-header-crisisMapIcon
   width: 25px
-  +float-right-10
+  margin-right: 15px
   content: url('../../images/Icon_map.svg')
 
 .cms-header-backButtonContainer
-  padding-top: 22px
-  left: 15px
-  font-size: $title-font-size
-  color: $blue
-  +text-center-n-bold
-  width: 15%
   float: left
 
 .cms-crisisListContainer
-  width: 23%
-  padding: 4px 10px 0 0
-  float: left
+  float: right
