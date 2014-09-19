@@ -1,0 +1,26 @@
+.cms-input
+	height: 40px
+	padding: $std-top-spacing
+	border-radius: 5px
+	+border($light-grey)
+	width: 100%
+
+.cms-button
+	border-radius: 5px
+	font-size: $base-font-size
+	font-weight: bold
+	height: 40px
+	width: 100%
+
+@mixin cms-color-button($background-color, $stopcolor, $content-color)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, $stopcolor), color-stop(1, $background-color))
+	background-color: $background-color
+	color: $content-color
+	@extend .cms-button
+
+.cms-textArea
+	width: 100%
+	font-size: $content_small_size
+	height: 125px
+	color: $grey13
+	padding: $std-top-spacing

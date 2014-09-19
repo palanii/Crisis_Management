@@ -77,7 +77,6 @@ var config = (function() {
 
             '/notifyTeamLeadership': {
                 templateUrl: 'views/notifyTeamLeadership.html',
-                styleSheet: 'styles/css/notifyTeamLeadership.css',
                 dependencies: [
                     'controllers/notifyTeamLeadership.js',
                     'services/notifyTeamLeadershipService.js'
