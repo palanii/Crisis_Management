@@ -14,7 +14,7 @@ var currentServerMode = serverModes.DEV;
 
 crisisMgmtApp.constant('crisisMgmtConfig', {
 
-        isDevMode:false,
+        isDevMode: true,
 
         selectTeamNavigation: {
             LANDING_SCREEN: 1,

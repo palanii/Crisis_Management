@@ -103,7 +103,6 @@ var config = (function() {
             },
             '/walletCardList': {
                 templateUrl: 'views/walletCardList.html',
-                styleSheet: 'styles/css/walletCardList.css',
                 dependencies: [
                     'controllers/walletCardList.js'
                 ]
