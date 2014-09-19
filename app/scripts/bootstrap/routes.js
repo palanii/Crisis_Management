@@ -30,8 +30,7 @@ var config = (function() {
             '/mapView': {
                 templateUrl: 'views/mapView.html',
                 styleSheet: [
-                    'styles/css/leaflet.css',
-                    'styles/css/mapView.css'
+                    'styles/css/leaflet.css'
                 ],
                 dependencies: [
                     'services/activeCrisisService.js',
