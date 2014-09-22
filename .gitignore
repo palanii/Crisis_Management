@@ -12,3 +12,4 @@ app/filters/
 app/styles/css/main.css
 *.DS_Store
 .idea/
+build/
