@@ -10,3 +10,4 @@ app/services/
 .sass-cache/
 app/filters/
 .idea/
+app/styles/css/main.css

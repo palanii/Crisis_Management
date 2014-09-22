@@ -2,9 +2,20 @@ var crisisMgmtApp = angular.module('crisisMgmtApp', ['ngRoute','ui.bootstrap']);
 
 var serverAddressPrefix = "http://windows2012medium-281511.phx-os1.stratus.dev.ebay.com/";
 
-crisisMgmtApp .constant('crisisMgmtConfig', {
+var serverModes=
+{
+    "DEV":"DEV/",
+    "QA":"QA/",
+    "UAT":"UAT/",
+    "PROD":"PROD/"
+};
 
-        isDevMode:true,
+var currentServerMode = serverModes.DEV;
+
+crisisMgmtApp.constant('crisisMgmtConfig', {
+
+        isDevMode:false,
+
         selectTeamNavigation: {
             LANDING_SCREEN: 1,
             VIEW_WALLET_CARD: 2
@@ -55,12 +66,31 @@ crisisMgmtApp .constant('crisisMgmtConfig', {
     },
     serverDataLocations:
     {
-        "LOGIN" : {"Path" : serverAddressPrefix + "CrisisBase/AuthenticationUser"},
-        "ACTIVE_CRISIS_COUNT": {"Path": serverAddressPrefix+"CrisisBase/FetchActiveCount"},
-        "DOCUMENTS_LIST":{"Path" : serverAddressPrefix+"CrisisBase/DocumentList"},
-        "GET_DOCUMENT":{"Path": serverAddressPrefix+"CrisisBase/DownloadDocument?documentName="}
+        "LOGIN" : {"Path" : serverAddressPrefix + currentServerMode + "CrisisBase/Authenticate"},
+        "CRISIS_LIST_VIEW" : {"Path" : serverAddressPrefix + currentServerMode + "CrisisBase/GetActiveOverview"},
+        "CRISIS_DETAIL":{"Path" : serverAddressPrefix + currentServerMode + "CrisisBase/GetActiveCrisisDetail"},
+        "ACTIVE_CRISIS_COUNT": {"Path": serverAddressPrefix + currentServerMode+"CrisisBase/GetActiveCount"},
+        "DOCUMENTS_LIST":{"Path" : serverAddressPrefix + currentServerMode+"CrisisBase/ViewDocumentList"},
+        "VIEW_DOCUMENT":{"Path":serverAddressPrefix + currentServerMode+ "CrisisBase/ViewDocument"},
+        "SELECT_TEAM":{"Path":serverAddressPrefix + currentServerMode + "CrisisBase/GetTeamList"},
+        "WALLET_CARD":{"Path":serverAddressPrefix + currentServerMode + "CrisisBase/GetWallet"},
+        "MEETING_FREQUENCY" : {"Path":serverAddressPrefix + currentServerMode + "CrisisBase/GetMeetingFrequency"},
+        "SEND_ALERT" : {"Path":serverAddressPrefix + currentServerMode + "CrisisBase/SendAlert"},
+        "RECEIVE_MEETING" : {"Path":serverAddressPrefix + currentServerMode + "CrisisBase/ReceiveMeeting"},
+        "SEND_MEETING" : {"Path":serverAddressPrefix + currentServerMode + "CrisisBase/SendMeeting"}
     },
 
-    cscContactNumber:"1 (877) 417-7474"
+    cscContactNumber:"+1(408) 967-7777",
+    initiateConferenceNumber:"04444240000,9445567595",
+    "localStorageKey":"WALLET_INFORMATION",
 
-    });
+    "appResponseCodes":
+    {
+        "SUCCESS":{"Code":"0","Message":""},
+        "WARNING":{"Code":"05","Message":""},
+        "ERROR":{"Code":"","Message":"Something went wrong with your request.Please contact eBay support for further assistance."},
+        "SESSION_TIME_OUT":{"Code":"99","Message":"Your session timed out. Please try logging in again."}
+
+    },
+    "sessionExpiryTime":20
+});

@@ -1,40 +1,32 @@
-body
-  font: 100% Helvetica, sans-serif
-  color: green !important
-  font-weight: bold
-
 .cms-login-masterContainer
   height: 90%
-  margin: 72px 15px
-  font-family: "HelveticaNeue"
+  margin: 68px 15px
+  font-family: $std-font-normal
 
 .cms-login-inputControl
-  color: #000000
-  font-size: 16px
+  color: $black
+  font-size: $base-font-size
   border-radius: 7px
-  border: 1px #b3b2b2 solid
+  +border($light-grey)
   width: 100%
   height: 44px
   padding: 10px
-  font-family: "HelveticaNeue-Light"
-
-\::-webkit-input-placeholder
-  color: #b3b2b2
+  font-family: $std-font-light
 
 .cms-login-headerLabel
-  color: green
+  color: $black
   font-size: 90pt
   text-align: center
   line-height: 100px
-  font-family: "HelveticaNeue-UltraLight"
+  font-family: $std-font-thin
 
 .cms-login-headerLabelPart2
-  color: #000000
+  color: $black
   font-size: 20pt
   text-align: center
   line-height: 22px
   margin-top: 17px
-  font-family: "HelveticaNeue-Light"
+  font-family: $std-font-light
 
 .cms-login-form
   margin-top: 49px
@@ -58,3 +50,26 @@ body
   text-decoration: none
   text-align: center
   margin-top: 21px
+
+/*Offline mode code
+
+.cms-login-masterContainer-offline
+  margin: 47.5px 15px
+
+.cms-login-walletCardSeparator
+  +border-position('top', $faded-grey)
+  margin-top: 21px
+
+.cms-login-walletCardContainer
+  margin-top: 10px
+  text-align: center
+
+.cms-login-walletCard-icon
+  content: url('../../images/icon-wallet-card.png')
+  width: 40px
+
+.cms-login-walletCardText
+  margin-left: 10px
+  color: $blue1
+  font-size: 13px
+  font-family: $std-font-light

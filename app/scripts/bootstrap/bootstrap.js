@@ -4,10 +4,10 @@
 var dependencyList =
      ['scripts/bootstrap/routes.js', 'directives/routeStyles.js','directives/formValidation.js','directives/errorMessages.js', 'controllers/footer.js', 'controllers/header.js',
         'services/pageNavigationService.js', 'services/headerService.js', 'services/footerService.js', 'services/urlChangerService.js',
-        'services/fetchDataService.js','services/loginDataService.js','services/errorMessagesService.js','filters/alphabeticalFilter.js'];
+        'services/fetchDataService.js','services/userService.js','services/errorMessagesService.js','services/localStorageService.js','services/userConnectivityService.js',
+         'filters/alphabeticalFilter.js','directives/userConnectivity.js','directives/loader.js','services/loaderService.js'];
 
 //Load the app.js first and then load other dependencies
-
 $script("scripts/bootstrap/config.js",'configModule');
 
 
@@ -23,5 +23,5 @@ $script.ready(['appModule'], function() {
 
 //After loading dependencies bootstrap the application.
 $script.ready(['dependencies'], function() {
-    angular.bootstrap(document, ['crisisMgmtApp'])
+    angular.bootstrap(document, ['crisisMgmtApp']);
 });

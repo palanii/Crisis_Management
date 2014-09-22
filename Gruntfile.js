@@ -2,25 +2,41 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        jshint: {
-            options: {
-                "curly": true,
-                "eqeqeq": true,
-            },
-            dev: {
-                src: ['app/**/*.js']
-            }
-        },
         sass: {
             dev: {
                 options: {
                     style: 'expanded',
-                    sourcemap: 'none',
+                    sourcemap: 'none'
                 },
                 files: [{
                     expand: true,
                     src: ['app/styles/css/main.sass'],
                     ext: '.css'
+                }]
+            }
+        },
+        copy: {
+            main: {
+                src: ['**/*', '!**/*.js'],
+                expand: true,
+                cwd: 'app',
+                dest: 'build'
+            }
+        },
+        uglify: {
+            options: {
+                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */ \n',
+                compress: {
+                    drop_console: true
+                }
+            },
+            my_target: {
+                files: [{
+                    expand: true,
+                    src: ['**/*.js'],
+                    dest: 'build',
+                    cwd: 'app',
+                    ext: '.js'
                 }]
             }
         },
@@ -44,10 +60,12 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     // task setup 
     grunt.registerTask('dev', ['connect', 'watch']);
+    grunt.registerTask('build', ['copy', 'uglify']);
 };
