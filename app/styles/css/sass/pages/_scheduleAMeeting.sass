@@ -1,24 +1,23 @@
 .cms-scheduleMeeting-inputElement
   height: 40px
-  padding: 5px 0 0 10px
+  padding: $std-small-spacing $zero $zero $std-top-spacing
   border-radius: 5px
-  font-style: normal
   +border($grey5)
 
 .cms-scheduleMeeting-inputElementLabel
-  font-weight: normal
+  //font-weight: normal
 
 .cms-selectTeam-teamSeparator
   height: 1px
   +border-position('bottom', $grey6)
-  padding-top: 10px
+  padding-top: $std-top-spacing
 
 .cms-selectTeam-teamName
-  padding-top: 10px
+  padding-top: $std-top-spacing
 
 .cms-scheduleMeeting-container
   font-family: "HelveticaNeue"
-  padding: 20px 15px 20px 15px
+  padding: $big-spacing $std-side-spacing
   font-size: $content_container_size
   color: $grey7
   background-color: $grey4
@@ -26,13 +25,10 @@
   margin-bottom: 50px
 
 .cms-scheduleMeeting-rowContainer
-  padding-top: 14px
+  padding-top: $std-side-spacing
 
 .cms-scheduleMeeting-separationContainer
-  padding-top: 5px
-
-.cms-scheduleMeeting-meetingSubject
-  width: 100%
+  padding-top:  $std-small-spacing
 
 .cms-scheduleMeeting-toDateContainer
   padding-left: 3px
@@ -44,19 +40,10 @@
   vertical-align: middle
 
 .cms-scheduleMeeting-meetingMessage
-  height: 95px
-  width: 100%
-  overflow-y: scroll
+  @extend .cms-textArea
 
 .cms-scheduleMeeting-startMeetingButton
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, $blue), color-stop(1, $blue2))
-  color: $white
-  font-size: $base-font-size
-  line-height: 40px
-  width: 100%
-  text-decoration: none
-  +text-center-n-bold
-  padding-top: 0px
+  @extend .form-button
 
 .cms-scheduleMeeting-frequencySelection
   width: 100%
@@ -83,7 +70,7 @@
 /* DatePicker Custom Styling
 
 ul.dropdown-menu
-  left: 15px !important
+  left: $std-side-spacing !important
   z-index: 1030
 
 /* End DatePicker Custom Styling
@@ -91,7 +78,7 @@ ul.dropdown-menu
 /* TimePicker Custom Styling
 
 .cms-scheduleMeeting-timePickerContainer table
-  margin-left: 4px
+  margin-left: $std-small-spacing
   .btn-link
     color: $grey8
 
@@ -99,9 +86,9 @@ ul.dropdown-menu
   pointer-events: none
 
 .cms-scheduleMeeting-dateError
-  margin-left: 16px
+  margin-left: $std-side-spacing
 
 table
-  margin-left: 18px
+  margin-left: $std-side-spacing
 
 /* End TimePicker Custom Styling

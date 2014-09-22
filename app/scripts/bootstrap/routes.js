@@ -139,7 +139,7 @@ var config = (function() {
 
             '/scheduleAMeeting': {
                 templateUrl: 'views/scheduleAMeeting.html',
-                styleSheet: 'styles/css/scheduleAMeeting.css',
+                //styleSheet: 'styles/css/scheduleAMeeting.css',
                 dependencies: [
                     'controllers/scheduleAMeeting.js',
                     'services/meetingService.js'
