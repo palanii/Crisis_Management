@@ -3,39 +3,35 @@
   +border-position('bottom', $grey1)
   padding: 15px 10px
   text-align: center
+  width: 100%
 
-.cms-header-pageTitle
-  font-size: $title_font_size
-  color: $blue
-  font-weight: bold
-  +text-ellipsis
-  font-family: $std-font-normal
-  display: inline-block
-  width: 70%
+  .cms-header-pageTitle
+    font-size: $title_font_size
+    color: $blue
+    font-weight: bold
+    +text-ellipsis
+    font-family: $std-font-normal
+    display: inline-block
+    width: 70%
 
-.cms-header-alertIcon
-  width: 25px
-  content: url('../../images/Icon_alert.svg')
+  .cms-header-backButtonContainer
+    float: left
+    .cms-header-backButton
+      width: 25px
+      content: url('../../images/Icon_back.svg')
 
-.cms-header-alertIconActive
-  width: 25px
-  content: url('../../images/Icon_alert_active.svg')
-
-.cms-header-backButton
-  width: 25px
-  content: url('../../images/Icon_back.svg')
-
-.cms-header-crisisListIcon
-  width: 25px
-  content: url('../../images/Icon_list.svg')
-
-.cms-header-crisisMapIcon
-  width: 25px
-  margin-right: 15px
-  content: url('../../images/Icon_map.svg')
-
-.cms-header-backButtonContainer
-  float: left
-
-.cms-crisisListContainer
-  float: right
+  .cms-crisisListContainer
+    float: right
+    .cms-header-alertIcon
+      width: 25px
+      content: url('../../images/Icon_alert.svg')
+    .cms-header-alertIconActive
+      width: 25px
+      content: url('../../images/Icon_alert_active.svg')
+    .cms-header-crisisListIcon
+      width: 25px
+      content: url('../../images/Icon_list.svg')
+    .cms-header-crisisMapIcon
+      width: 25px
+      margin-right: 15px
+      content: url('../../images/Icon_map.svg')
