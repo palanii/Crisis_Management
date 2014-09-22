@@ -121,7 +121,6 @@ var config = (function() {
             },
             '/requestResiliencySupport': {
                 templateUrl: 'views/requestResiliencySupport.html',
-                styleSheet: 'styles/css/requestResiliencySupport.css',
                 dependencies: [
                     'controllers/requestResiliencySupport.js',
                     'services/requestResiliencyService.js'
