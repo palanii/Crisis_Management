@@ -85,7 +85,7 @@ var config = (function() {
 
             '/sendAlert': {
                 templateUrl: 'views/sendAlert.html',
-                styleSheet: 'styles/css/sendAlert.css',
+                //styleSheet: 'styles/css/sendAlert.css',
                 dependencies: [
                     'controllers/sendAlert.js',
                     'services/sendAlertService.js'

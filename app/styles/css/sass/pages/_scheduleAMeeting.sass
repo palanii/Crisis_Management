@@ -1,16 +1,13 @@
 .cms-scheduleMeeting-inputElement
-  height: 40px
   padding: $std-small-spacing $zero $zero $std-top-spacing
-  border-radius: 5px
-  +border($grey5)
+  @extend .cms-base-input
 
 .cms-scheduleMeeting-inputElementLabel
+  //can be removed
   //font-weight: normal
 
 .cms-selectTeam-teamSeparator
-  height: 1px
-  +border-position('bottom', $grey6)
-  padding-top: $std-top-spacing
+  @extend .separator
 
 .cms-selectTeam-teamName
   padding-top: $std-top-spacing
@@ -47,7 +44,7 @@
 
 .cms-scheduleMeeting-frequencySelection
   width: 100%
-  padding-top: 0px
+  padding-top: $zero
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none

@@ -1,16 +1,18 @@
-.cms-input
+.cms-base-input
   height: 40px
-  padding: $std-top-spacing
   border-radius: 5px
   +border($grey-input-border)
   width: 100%
 
+.cms-input
+  @extend .cms-base-input
+  padding: $std-top-spacing
+
 .cms-button
-  border-radius: 5px
+  @extend .cms-base-input
   font-size: $base-font-size
   font-weight: bold
-  height: 40px
-  width: 100%
+
 
 =cms-color-button($background-color, $stopcolor, $content-color)
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, $stopcolor), color-stop(1, $background-color))
@@ -22,11 +24,14 @@
 .form-button
   +cms-color-button($blue2,$blue3,$white)
 
+.form-button-div
+  text-align: center
+  padding: $medium-spacing $zero
+  @extend .form-button
+
 .cms-textArea
-  width: 100%
   font-size: $content_small_size
   height: 125px
   color: $grey13
   padding: $std-top-spacing
-  border-radius: 5px
-  +border($grey-input-border)
+  @extend .cms-base-input

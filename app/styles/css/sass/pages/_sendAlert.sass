@@ -6,13 +6,10 @@
   font-weight: bold
 
 .cms-sendAlert-divider
-  +border-position('top', $grey11)
-  width: 100%
-  margin: 10px 0px 10px 0px
+  @extend .separator
 
 .cms-sendAlert-pageContainer
-  background-color: $grey12
-  padding: 20px 15px 90px 15px
+  padding: $big-spacing $std-side-spacing 90px
 
 .cms-sendAlert-message
   width: 100%
@@ -28,18 +25,17 @@
   color: $grey7
 
 .cms-sendAlert-messageLabel
-  margin-top: 20px
-  margin-bottom: 5px
+  margin-top: $big-spacing
+  margin-bottom: $std-small-spacing
 
 .cms-sendAlert-sendAlertButton
-  @extend .form-button
-  margin-top: 18px
+  margin-top: $big-spacing
+  @extend .form-button-div
 
 /* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution
 
 @media (min-device-width: 720px) and (min-device-height: 1080px)
   .cms-sendAlert-pageContainer
-    background-color: $grey12
-    padding: 20px 15px 90px 15px
+    padding: $big-spacing $std-side-spacing 90px
   .cms-sendAlert-sendAlertButton
     margin-top: 45px
