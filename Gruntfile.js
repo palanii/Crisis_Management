@@ -13,6 +13,15 @@ module.exports = function(grunt) {
                     src: ['app/styles/css/main.sass'],
                     ext: '.css'
                 }]
+            },
+            build: {
+                options: {
+                    style: 'compressed',
+                    sourcemap: 'none'
+                },
+                files: {
+                    'build/styles/css/main.css': 'app/styles/css/main.sass'
+                }
             }
         },
         copy: {
@@ -51,7 +60,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['app/styles/css/**/*.sass'],
-                tasks: ['sass'],
+                tasks: ['sass:dev'],
                 options: {
                     livereload: true
                 }
@@ -67,5 +76,5 @@ module.exports = function(grunt) {
 
     // task setup 
     grunt.registerTask('dev', ['connect', 'watch']);
-    grunt.registerTask('build', ['copy', 'uglify']);
+    grunt.registerTask('build', ['copy', 'sass:build', 'uglify']);
 };
