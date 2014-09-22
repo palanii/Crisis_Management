@@ -1,0 +1,38 @@
+.cms-rrs-text
+//can be removed
+
+.cms-rrs-sectionHeading
+  font-weight: bold
+
+.cms-rrs-userName
+  font-weight: bold
+  color: $blue
+
+.cms-rrs-sendAlertButton
+  //can be used directly in view
+  @extend .form-button
+.cms-rrs-masterContainer
+  padding: $std-side-spacing
+  color: $grey7
+
+.cms-rrs-userInfoHeading
+  padding-top: $std-top-spacing
+
+.cms-rrs-problemDescription
+  //can replace class directly in the view
+  @extend .cms-textArea
+
+.cms-rrs-problemDescriptionContainer
+  margin: $std-small-spacing $zero
+
+.cms-rrs-requestDivider
+  +border_position('top',$grey11)
+  margin: $std-small-spacing $zero
+
+/* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution
+
+@media (min-device-width: 720px) and (min-device-height: 1080px)
+  .cms-rrs-masterContainer
+    padding: 20px $std-side-spacing 90px
+  .cms-rrs-sendAlertButton
+    margin-top: 45px

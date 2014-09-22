@@ -1,0 +1,25 @@
+.conferenceTitle
+  text-align: center
+  height: 54px
+  padding-top: $std-top-spacing
+  +border-position('bottom',$white)
+  background-color: $white
+  width: 100%
+
+.cms-ic-container
+  background-color: $grey-background
+  width: 100%
+  padding: (3*$big-spacing) $std-side-spacing $std-top-spacing
+
+.cms-ic-conferenceIcon
+  margin: $zero auto
+  height: $initiate-conf-icon-size
+  width: $initiate-conf-icon-size
+  background-size: 100%
+  background-image: url("../../images/initiateConference.svg")
+
+.cms-ic-conferenceButton
+  margin-top: 3*$big-spacing
+  text-align: center
+  padding: $medium-spacing $zero
+  @extend .form-button
