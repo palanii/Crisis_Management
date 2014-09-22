@@ -1,0 +1,58 @@
+.cms-home-container
+  height: 100%
+  //not needed for border boxing
+  //margin-top: -54px
+  //padding-top: 54px
+
+.cms-home-heading
+  /*  font-family: $std-font-normal
+    font-size: $base-font-size
+    font-weight: normal
+    padding-left: $list-side-spacing
+    padding-top: 25px*/
+
+
+.cms-home-list
+  padding-left: $zero
+  margin-bottom: $zero
+
+.cms-home-group-item
+  background-color: $grey-background
+
+.cms-home-listImageContainer
+  display: inline-block
+  position: relative
+
+.cms-home-listImageText
+  display: inline-block
+  position: relative
+  color: $black
+  width: 70%
+  font-family: $std-font-light
+  font-size: $list-font-size
+  //padding-top: 20px
+  vertical-align: middle
+  padding-left: $list-side-spacing
+
+.cms-home-headingIcon
+  height: $list-icon-size
+  width: $list-icon-size
+
+.badge
+  font-family: $std-font-light
+  position: absolute
+  margin: 7px $zero $zero 55px
+  background-color: $red1
+  padding: 4px
+  border-radius: $badge-radius
+  +border($grey4, 3px)
+  width: $badge-size
+  height: $badge-size
+  font-size: $badge-font-size
+
+/* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution
+
+@media (min-device-width: 720px) and (min-device-height: 1080px) , (min-device-width: 1080px) and (min-device-height: 1920px)
+  .cms-home-group-item
+    height: 145px !important
+    padding: 35px $list-side-spacing !important

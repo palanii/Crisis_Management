@@ -1,16 +1,10 @@
 .cms-footer-image-group
-  position: relative
-  padding: 0 10px 0 10px
+  padding: 7px 10px
   text-align: center
   float: left
   width: 25%
-  font-size: $base_font_size
-  font-family: "HelveticaNeue"
-  color: $grey2
-  margin-top: 8px
-
-.cms-footer-active-crisis-active, .cms-footer-respond-active, .cms-footer-policies-active, .cms-footer-wallet-card-active
-  color: $grey2
+  font-size: $footer-font-size
+  font-family: $std-font-normal
 
 .cms-footer-active-crisis, .cms-footer-respond, .cms-footer-policies, .cms-footer-wallet-card
   color: $blue
@@ -43,14 +37,11 @@
 .cms-footer
   background: $white
   width: 100%
-  border-top: 1px solid $grey1
+  +border-position('top', $grey1)
+  color: $grey2
 
 .cms-footer-disabledLink
   pointer-events: none
 
 .cms-footer-icon
   height: 28px
-
-.cms-footer-masterContainer
-  border: 1px solid $grey3
-  background: $white

@@ -30,8 +30,7 @@ var config = (function() {
             '/mapView': {
                 templateUrl: 'views/mapView.html',
                 styleSheet: [
-                    'styles/css/leaflet.css',
-                    'styles/css/mapView.css'
+                    'styles/css/leaflet.css'
                 ],
                 dependencies: [
                     'services/activeCrisisService.js',
@@ -42,14 +41,12 @@ var config = (function() {
             },
             '/crisisDetail': {
                 templateUrl: 'views/crisisDetailView.html',
-                styleSheet: 'styles/css/crisisDetail.css',
                 dependencies: [
                     'controllers/crisisDetail.js'
                 ]
             },
             '/crisisListView': {
                 templateUrl: 'views/crisisListView.html',
-                styleSheet: 'styles/css/crisisListView.css',
                 dependencies: [
                     'controllers/crisisListView.js'
                 ]
@@ -80,7 +77,6 @@ var config = (function() {
 
             '/notifyTeamLeadership': {
                 templateUrl: 'views/notifyTeamLeadership.html',
-                styleSheet: 'styles/css/notifyTeamLeadership.css',
                 dependencies: [
                     'controllers/notifyTeamLeadership.js',
                     'services/notifyTeamLeadershipService.js'
@@ -104,7 +100,6 @@ var config = (function() {
             },
             '/walletCardList': {
                 templateUrl: 'views/walletCardList.html',
-                styleSheet: 'styles/css/walletCardList.css',
                 dependencies: [
                     'controllers/walletCardList.js'
                 ]

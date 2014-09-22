@@ -1,0 +1,27 @@
+#map
+  height: 100%
+
+.leaflet-popup
+  padding-bottom: $std-side-spacing
+
+.leaflet-popup-content
+  width: 240px
+  height: 80px
+  display: inline-flex
+
+.cms-map-popup
+  @extend .flex-vcenter
+
+.cms-map-severityBadge
+  content: url('../../images/warning_icon.svg')
+
+.cms-map-crisisDurationContainer
+  text-align: right
+.cms-map-navigationIcon
+  height: 14px
+  padding-left: 10px
+  background: url("../../images/map_popover_arrow.svg") right
+  background-size: 15px
+
+.cms-map-crisisDuration
+  color: $blue

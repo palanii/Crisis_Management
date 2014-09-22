@@ -12,27 +12,15 @@
 }
 
 .cms-selectTeam-searchBox {
-    width:100%;
-    border-radius:4px;
-    padding-top:7px;
-    border:1px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px;
+    line-height: 27px;
 }
 
 .cms-selectTeam-searchIcon {
-    background-size:17px;
-    background: #ffffff url('../../images/search.svg') no-repeat 36%;
-    background-size: 17px;
-}
-
-.cms-selectTeam-searchBox::-webkit-input-placeholder {
-    text-align:center;
-    font-family:"HelveticaNeue";
-    font-size:15px;
-    color:#8e8e93;
-}
-
-.cms-selectTeam-searchBox:focus::-webkit-input-placeholder {
-    color:transparent;
+   background: #ffffff url('../../images/searchBoxText.png') no-repeat 46%;
+   background-size: 69px;
 }
 
 .cms-selectTeam-searchIcon:focus {
@@ -75,18 +63,3 @@
     margin-top:60px;
 }
 
-input::-webkit-input-placeholder{
-    color:red !important;
-}
-input::-webkit-input-placeholder {
-    color:red !important;
-}
-input::-moz-placeholder {
-    color:red !important;
-}
-input:-moz-placeholder {   /* Older versions of Firefox */
-    color:red !important;
-}
-input:-ms-input-placeholder { 
-    color:red !important;
-}
