@@ -93,7 +93,7 @@ var config = (function() {
             },
             '/initiateConference': {
                 templateUrl: 'views/initiateConference.html',
-                styleSheet: 'styles/css/initiateConference.css',
+               // styleSheet: 'styles/css/initiateConference.css',
                 dependencies: [
                     'controllers/initiateConference.js'
                 ]
