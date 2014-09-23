@@ -7,15 +7,11 @@
 
 
 .cms-cdv-accordion-header
-  color: $blue
-  font-weight: bold
-  font-size: $base-font-size
-  &:hover
-    text-decoration: none
+  @extend .cms-accordion-header
+
 
 .cms-cdv-accordion-body
   background-color: $grey10
-  padding: $zero $zero $zero 15px
 
 .cms-cdv-pointOfContact
   @extend .zero-pad
@@ -58,8 +54,10 @@ a.cms-cdv-timeOccuredLink
 .cms-cdv-locationInfo-lastItem, .cms-cdv-updates-lastItem
   padding-bottom: $std-side-spacing + 1 !important
 
-.cms-cdv-locationInfo-remainingItems, .cms-cdv-updates-remainingItems
-  padding: $medium-spacing 0
+.cms-accordion-info-item
+  padding-top: $std-top-spacing
+  &:first-child
+    padding-top: $zero
 
 .cms-cdv-icon
   width: $crisis-detail-arrow-size
