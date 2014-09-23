@@ -2,6 +2,9 @@
   font-family: $std-font-normal
   font-size: $content_container_size
   color: $black
+  &.panel-group
+    +footer-space
+
 
 .cms-cdv-accordion-header
   color: $blue
@@ -33,7 +36,6 @@
   width: 100%
   @extend .flex-vcenter
   margin: $zero
-  +footer-space
 
 .glyphicon-chevron-up
   color: $black !important
