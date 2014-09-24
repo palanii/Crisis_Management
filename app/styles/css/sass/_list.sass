@@ -1,0 +1,136 @@
+//List1 - left icon and text: home, respondToCrisis, respondToCrisisLeadership
+.cms-icon-list-container
+  padding: $zero
+  margin: $zero
+  .cms-list-item
+    background-color: $grey4
+    +border-position('bottom', $grey3)
+    height: 113px
+    padding: $big-spacing $list-side-spacing
+    .cms-list-icon-container
+      display: inline-block
+      .cms-list-icon
+        height: $list-icon-size
+        width: $list-icon-size
+    .cms-list-text
+      display: inline-block
+      color: $black
+      width: 70%
+      font-family: $std-font-light
+      vertical-align: middle
+      padding-left: $list-side-spacing
+      font-size: $base-font-size
+
+
+//List2 - left icon, text, right-icon: crisisListView
+.cms-crisis-list-container
+  padding: $zero
+
+  .cms-crisis-item
+    margin: $zero
+    +border-position('bottom', $grey3)
+    list-style-type: none
+    padding: $std-side-spacing $zero
+
+    .cms-list-icon
+      background: url("../../images/warning_icon.svg") no-repeat
+      height: $crisis-list-icon-height
+      width: $crisis-list-icon-width
+      margin: $std-side-spacing 10px
+      background-size: cover
+
+    //Do we need this...?
+    .cms-list-icon-text
+      text-align: center
+      font-family: $std-font-normal
+      font-size: $content_large_font
+      color: $white
+
+    .cms-crisis-text
+      display: inline-block
+      width: 65%
+
+      .cms-crisis-type
+        +text-ellipsis
+
+      .cms-crisis-duration
+        color: $blue
+
+    .cms-crisis-duration-container
+      padding: 10% $zero
+      margin-right: $std-side-spacing
+
+      .cms-nav-icon
+        padding-left: $crisis-item-spacing
+        background: url("../../images/icon_listnav.svg") right no-repeat
+        background-size: $crisis-item-spacing
+
+//List3 - filtered search list: selectTeam, viewDocumentsList, selectTeamForWalletCard
+.cms-search-nav
+  margin-top: $crisis-list-icon-width
+
+  .cms-search-container
+    height: $crisis-list-icon-height
+    background-color: $grey9
+    padding: $medium-spacing
+    +border($grey3)
+
+    .cms-search-box
+      width: 100%
+      border-radius: $input-border-radius
+      +border($white)
+      padding: $std-small-spacing $std-top-spacing
+
+    .cms-search-icon
+      background: $white url('../../images/searchBoxText.png') no-repeat 46%
+      background-size: $search-box-bg-icon-size
+      &:focus
+        background-image: none
+
+.cms-search-results
+  font-family: $std-font-normal
+  color: $black
+  padding-top: $crisis-list-icon-height
+  +footer-space
+
+  .cms-search-filter-character
+    padding: $std-small-spacing $std-top-spacing
+    background-color: $grey10
+    font-size: $title_font_size
+    color: $blue
+    font-weight: 700
+    display: block
+
+  .cms-list-item-container
+    padding: $zero
+    margin-top: 2px
+    .cms-no-records
+      text-align: center
+      width: 100%
+      padding: $std-top-spacing 15px
+      display: inline-block
+
+    .cms-list-item-text
+      background-color: $white
+      +border-position('bottom', $grey3)
+      font-size: $content_container_size
+      font-weight: 400
+      color: $black
+      padding: $std-top-spacing
+      &:last-of-type
+        border: none
+
+      .list-text-fixed
+        width: 90%
+        +text-ellipsis
+        display: inline-block
+
+    .cms-list-nav
+      height: 20px
+
+/* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution
+@media (min-device-width: 720px) and (min-device-height: 1080px) , (min-device-width: 1080px) and (min-device-height: 1920px)
+  .cms-icon-list-container
+    .cms-list-item
+      height: 145px !important
+      padding: 35px $list-side-spacing !important
