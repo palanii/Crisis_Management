@@ -39,11 +39,40 @@
   padding: $std-top-spacing
   @extend .cms-base-input
 
+.cms-date
+  //width: 140px
+  padding: $std-small-spacing
+  @extend .cms-base-input
+  @extend %data-picker-icon
+
+.cms-time
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  padding: $std-small-spacing
+  @extend .cms-base-input
+  @extend %time-picker-icon
+
+.cms-select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  padding: $std-small-spacing
+  @extend .cms-base-input
+  @extend %drop-down-arrow
+
 //Headers
 .cms-accordion-header
   color: $blue
   font-weight: bold
 
+%section-spacing
+  padding-top: $big-spacing
+
 .cms-section-heading
   font-weight: bold
-  padding-top: $big-spacing
+  @extend %section-spacing
+
+.cms-section-subheading
+  font-weight: normal //to overwrite label style set as bold in bootstrap
+  //padding-top: $std-top-spacing
