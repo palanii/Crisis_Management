@@ -1,5 +1,7 @@
-.cms-nl-text
+.cms-nl-masterContainer
+  padding: $std-side-spacing
   color: $grey7
+  +footer-space
 
 .cms-nl-headingText
   font-weight: bold
@@ -9,10 +11,8 @@
   display: table-cell
   padding-left: $std-small-spacing
 
-.cms-nl-sectionHeading
-  font-weight: bold
-
-.cms-nl-frequencySelection
+//not used - need to revisit
+/*.cms-nl-frequencySelection
   width: 100%
   padding-top: $zero
   -webkit-appearance: none
@@ -20,29 +20,10 @@
   appearance: none
   background: white url("../../images/dropdown_arrow.svg") 97.5% no-repeat
   background-size: 20px 20px
-  vertical-align: middle
-
-.cms-nl-button
-  @extend .form-button
-
-.cms-nl-masterContainer
-  padding: $std-side-spacing
-  +footer-space
-
-.cms-nl-eventTypeContainer
-  padding: $big-spacing $zero $std-small-spacing
-
-.cms-nl-descriptionTextArea
-  @extend .cms-textArea
-
-.cms-nl-description
-  margin: $big-spacing $zero $std-small-spacing
-
-.cms-nl-separator
-  @extend .separator
+  vertical-align: middle*/
 
 /* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution
-
-@media screen and (min-device-width: 720px), screen and (min-device-width: 1080px)
-  .cms-nl-button
-    margin-top: 55px//required?
+.cms-nl-masterContainer
+  @media screen and (min-device-width: 720px), screen and (min-device-width: 1080px)
+    .form-button
+      margin-top: 55px

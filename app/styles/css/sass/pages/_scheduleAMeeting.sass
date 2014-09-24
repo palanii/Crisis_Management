@@ -1,70 +1,29 @@
+.cms-scheduleMeeting-container
+  padding: $big-spacing $std-side-spacing
+  color: $grey7
+  +footer-space
+
 .cms-scheduleMeeting-inputElement
   padding: $std-small-spacing $zero $zero $std-top-spacing
   @extend .cms-base-input
 
-.cms-scheduleMeeting-inputElementLabel
-  //can be removed
-  //font-weight: normal
-
-.cms-selectTeam-teamSeparator
-  @extend .separator
-
-.cms-selectTeam-teamName
-  padding-top: $std-top-spacing
-
-.cms-scheduleMeeting-container
-  font-family: "HelveticaNeue"
-  padding: $big-spacing $std-side-spacing
-  font-size: $content_container_size
-  color: $grey7
-  background-color: $grey4
-  width: 100%
-  margin-bottom: 50px
-  +footer-space
-
 .cms-scheduleMeeting-rowContainer
-  padding-top: $std-side-spacing
+  @extend %section-spacing
 
 .cms-scheduleMeeting-separationContainer
   padding-top:  $std-small-spacing
 
-.cms-scheduleMeeting-toDateContainer
-  padding-left: 3px
+.start-date-box
+  padding-right: $std-small-spacing
 
-.cms-scheduleMeeting-fromDate, .cms-scheduleMeeting-toDate
-  width: 140px
-  background: $white url("../../images/calendar.svg") 96% no-repeat
-  background-size: 23px 23px
-  vertical-align: middle
+.end-date-box
+  padding-left: $std-small-spacing
 
-.cms-scheduleMeeting-meetingMessage
-  @extend .cms-textArea
+// not used
+/*.cms-scheduleMeetingdropdown-menu
+  min-width: 140px*/
 
-.cms-scheduleMeeting-startMeetingButton
-  @extend .form-button
-
-.cms-scheduleMeeting-frequencySelection
-  width: 100%
-  padding-top: $zero
-  -webkit-appearance: none
-  -moz-appearance: none
-  appearance: none
-  background: $white url("../../images/dropdown_arrow.svg") 97.5% no-repeat
-  background-size: 20px 20px
-  vertical-align: middle
-
-.cms-scheduleMeeting-meetingTime
-  width: 100%
-  appearance: none
-  -webkit-appearance: none
-  -moz-appearance: none
-  background: $white url("../../images/clock.svg") 97% no-repeat
-  background-size: 23px 23px
-  vertical-align: middle
-
-.cms-scheduleMeetingdropdown-menu
-  min-width: 140px
-
+//custom styles need to be revisited
 /* DatePicker Custom Styling
 
 ul.dropdown-menu
