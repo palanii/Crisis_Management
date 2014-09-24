@@ -1,3 +1,4 @@
+//Input controls
 .cms-base-input
   height: 40px
   border-radius: 5px
@@ -12,7 +13,6 @@
   @extend .cms-base-input
   font-size: $base-font-size
   font-weight: bold
-
 
 =cms-color-button($background-color, $stopcolor, $content-color)
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, $stopcolor), color-stop(1, $background-color))
@@ -39,6 +39,11 @@
   padding: $std-top-spacing
   @extend .cms-base-input
 
+//Headers
 .cms-accordion-header
   color: $blue
   font-weight: bold
+
+.cms-section-heading
+  font-weight: bold
+  padding: $big-spacing $zero $std-small-spacing
