@@ -53,7 +53,6 @@ var config = (function() {
             },
             '/selectTeam': {
                 templateUrl: 'views/selectTeam.html',
-                styleSheet: 'styles/css/selectTeam.css',
                 dependencies: [
                     'controllers/selectTeam.js',
                     'services/teamService.js'
@@ -61,7 +60,6 @@ var config = (function() {
             },
             '/respondToCrisis': {
                 templateUrl: 'views/respondToCrisis.html',
-                styleSheet: 'styles/css/respondToCrisis.css',
                 dependencies: [
                     'controllers/respondToCrisis.js'
                 ]
@@ -69,7 +67,6 @@ var config = (function() {
 
             '/respondToCrisisLeadership': {
                 templateUrl: 'views/respondToCrisisLeadership.html',
-                styleSheet: 'styles/css/respondToCrisisLeadership.css',
                 dependencies: [
                     'controllers/respondToCrisisLeadership.js'
                 ]
@@ -85,7 +82,6 @@ var config = (function() {
 
             '/sendAlert': {
                 templateUrl: 'views/sendAlert.html',
-                //styleSheet: 'styles/css/sendAlert.css',
                 dependencies: [
                     'controllers/sendAlert.js',
                     'services/sendAlertService.js'
@@ -93,7 +89,6 @@ var config = (function() {
             },
             '/initiateConference': {
                 templateUrl: 'views/initiateConference.html',
-               // styleSheet: 'styles/css/initiateConference.css',
                 dependencies: [
                     'controllers/initiateConference.js'
                 ]
@@ -106,14 +101,12 @@ var config = (function() {
             },
             '/viewWalletCard': {
                 templateUrl: 'views/viewWalletCard.html',
-                styleSheet: 'styles/css/viewWalletCard.css',
                 dependencies: [
                     'controllers/viewWalletCard.js'
                 ]
             },
             '/selectTeamForWalletCard': {
                 templateUrl: 'views/selectTeamForWalletCard.html',
-                styleSheet: 'styles/css/selectTeam.css',
                 dependencies: [
                     'controllers/selectTeam.js',
                     'services/teamService.js'
@@ -129,7 +122,6 @@ var config = (function() {
 
             '/viewDocumentsList': {
                 templateUrl: 'views/viewDocumentsList.html',
-                styleSheet: 'styles/css/viewDocumentsList.css',
                 dependencies: [
                     'controllers/viewDocumentsList.js',
                     'services/policiesService.js'
@@ -139,7 +131,6 @@ var config = (function() {
 
             '/scheduleAMeeting': {
                 templateUrl: 'views/scheduleAMeeting.html',
-                //styleSheet: 'styles/css/scheduleAMeeting.css',
                 dependencies: [
                     'controllers/scheduleAMeeting.js',
                     'services/meetingService.js'
@@ -148,7 +139,6 @@ var config = (function() {
 
             '/scheduledMeeting': {
                 templateUrl: 'views/scheduledMeeting.html',
-                styleSheet: 'styles/css/scheduledMeeting.css',
                 dependencies: [
                     'controllers/scheduledMeeting.js',
                     'services/meetingService.js'
