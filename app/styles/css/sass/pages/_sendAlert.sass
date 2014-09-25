@@ -1,41 +1,27 @@
-.cms-sendAlert-text
-  font-size: $content_container_size
-  color: $grey7
-
-.cms-sendAlert-sectionHeading
-  font-weight: bold
-
-.cms-sendAlert-divider
-  @extend .separator
-
 .cms-sendAlert-pageContainer
-  padding: $big-spacing $std-side-spacing
+  padding: $zero $std-side-spacing
+  color: $grey7
   height: 100%
 
 .cms-sendAlert-message
-  width: 100%
-  font-weight: normal
   font-size: $content_small_size
   height: 165px
   color: $grey13
   line-height: 23px
   user-select: none
 
-.sendAlertBoldText
+//not used - need to revist
+/*.sendAlertBoldText
   font-weight: bold
-  color: $grey7
+  color: $grey7*/
 
-.cms-sendAlert-messageLabel
+/*.cms-sendAlert-messageLabel
   margin-top: $big-spacing
-  margin-bottom: $std-small-spacing
-
-.cms-sendAlert-sendAlertButton
-  @extend .form-button-div
+  margin-bottom: $std-small-spacing*/
 
 /* Media queries for xhdpi(W*H: 720*1080) and xxhdpi(W*H: 1080*1920) resolution
-
 @media (min-device-width: 720px) and (min-device-height: 1080px)
   .cms-sendAlert-pageContainer
     padding: $big-spacing $std-side-spacing 90px
-  .cms-sendAlert-sendAlertButton
-    margin-top: 45px
+    .form-button-div
+      margin-top: 45px
