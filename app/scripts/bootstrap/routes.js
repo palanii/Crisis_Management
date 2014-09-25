@@ -106,7 +106,7 @@ var config = (function() {
             },
             '/viewWalletCard': {
                 templateUrl: 'views/viewWalletCard.html',
-                styleSheet: 'styles/css/viewWalletCard.css',
+                //styleSheet: 'styles/css/viewWalletCard.css',
                 dependencies: [
                     'controllers/viewWalletCard.js'
                 ]
