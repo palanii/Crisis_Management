@@ -62,7 +62,9 @@ crisisMgmtApp.constant('crisisMgmtConfig', {
         "REQUEST_RESILIENCY":{"Path" : "data/requestResiliency.json"},
         "NOTIFY_TEAM_LEADERSHIP_EVENT_TYPE":{"Path" : "data/notifyTeamLeadershipEventType.json"},
         "DOCUMENTS_LIST":{"Path" : "data/documentsList.json"},
-        "WALLET_CARD":{"Path":"data/walletCard.json"}
+        "WALLET_CARD":{"Path":"data/walletCard.json"},
+        "RECEIVE_MEETING": {"Path" : "data/scheduledMeeting.json"},
+        "SEND_ALERT":{"Path":"data/sendAlert.json"}
     },
     serverDataLocations:
     {
