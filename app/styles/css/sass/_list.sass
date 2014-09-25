@@ -9,7 +9,7 @@
     padding: $big-spacing $list-side-spacing
     .cms-list-icon-container
       display: inline-block
-      .cms-list-icon
+      .cms-list-icon-image
         height: $list-icon-size
         width: $list-icon-size
     .cms-list-text
@@ -32,12 +32,8 @@
     list-style-type: none
     padding: $std-side-spacing $zero
 
-    .cms-list-icon
-      background: url("../../images/warning_icon.svg") no-repeat
-      height: $crisis-list-icon-height
-      width: $crisis-list-icon-width
-      margin: $std-side-spacing 10px
-      background-size: cover
+    .cms-sev-icon
+      @extend .cms-warning-icon
 
     //Do we need this...?
     .cms-list-icon-text
@@ -61,9 +57,7 @@
       margin-right: $std-side-spacing
 
       .cms-nav-icon
-        padding-left: $crisis-item-spacing
-        background: url("../../images/icon_listnav.svg") right no-repeat
-        background-size: $crisis-item-spacing
+        @extend .cms-right-arrow-icon
 
 //List3 - filtered search list: selectTeam, viewDocumentsList, selectTeamForWalletCard
 .cms-search-nav
@@ -82,10 +76,7 @@
       padding: $std-small-spacing $std-top-spacing
 
     .cms-search-icon
-      background: $white url('../../images/searchBoxText.png') no-repeat 46%
-      background-size: $search-box-bg-icon-size
-      &:focus
-        background-image: none
+      @extend .cms-search-list-icon
 
 .cms-search-results
   font-family: $std-font-normal

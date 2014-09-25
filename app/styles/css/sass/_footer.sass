@@ -1,13 +1,11 @@
 .cms-footer
   background: $white
-  width: 100%
   +border-position('top', $grey1)
   color: $grey2
 
   .cms-footer-image-group
-    padding: 7px 10px
+    padding: $footer-icon-padding-top $std-top-spacing
     text-align: center
-    float: left
     width: 25%
     font-size: $footer-font-size
     font-family: $std-font-normal
@@ -16,32 +14,31 @@
       color: $blue
 
     .cms-footer-activeCrisisIcon
-      content: url('../../images/btmtab_Icon_ActiveCrisis.svg')
-      height: 28px
+      @extend .cms-active-crisis-icon
 
     .cms-footer-activeCrisisIcon-active
-      content: url('../../images/btmtab_Icon_ActiveCrisis_active.svg')
+      @extend .cms-active-crisis-icon-active
 
     .cms-footer-respondCrisisIcon
-      content: url('../../images/btmtab_Icon_RespondCrisis.svg')
+      @extend .cms-respond-crisis-icon
 
     .cms-footer-respondCrisisIcon-active
-      content: url('../../images/btmtab_Icon_RespondCrisis_active.svg')
+      @extend .cms-respond-crisis-icon-active
 
     .cms-footer-CMPolicyIcon
-      content: url('../../images/btmtab_Icon_CMPolicies.svg')
+      @extend .cms-policy-icon
 
     .cms-footer-CMPolicyIcon-active
-      content: url('../../images/btmtab_Icon_CMPolicies_active.svg')
+      @extend .cms-policy-icon-active
 
     .cms-footer-walletCardIcon
-      content: url('../../images/btmtab_Icon_WalletCard.svg')
+      @extend .cms-wallet-card-icon
 
     .cms-footer-walletCardIcon-active
-      content: url('../../images/btmtab_Icon_WalletCard_active.svg')
+      @extend .cms-wallet-card-icon-active
 
     .cms-footer-icon
-      height: 28px
+      height: $footer_icon_height
 
   .cms-footer-disabledLink
     pointer-events: none
