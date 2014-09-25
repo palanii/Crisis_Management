@@ -1,66 +1,41 @@
-.cms-clv-masterContainer
-  +footer-space
-
-.cms-clv-container
-  display: table
-  width: 100%
-  +border-position('bottom', $grey3)
-  background-color: $white
-  table-layout: fixed
-  
-.cms-clv-details
-  display: table-row
-  width: 100%
-  height: $crisis-list-item-height
-  border-bottom: ridge
-
-.cms-clv-crisisSeverity
-  display: table-cell
-  width: 15%
-  vertical-align: middle
-  padding: $crisis-item-spacing 0
-  padding-left: $crisis-item-spacing
-
-.cms-clv-crisisListItem
-  display: table-cell
-  width: 75%
-  padding: $crisis-item-spacing
-
-.cms-clv-crisisDurationContainer
-  display: table-cell
-  width: 10%
-  text-align: center
-  padding-right: $crisis-item-spacing
-  vertical-align: middle
-
-.cms-clv-navigationIcon
-  height: 20px
-  padding-left: $crisis-item-spacing
-  background: url("../../images/icon_listnav.svg") right no-repeat
-  background-size: $crisis-item-spacing
-
-.cms-clv-crisisSeverityData 
-  // need to revisit
-  text-align: center
-  font-family: $std-font-normal
-  font-size: $content_large_font
-  color: $white
-  vertical-align: middle
-  line-height: 23px
-
-.cms-clv-crisisType
-  font-family: $std-font-normal
-  font-size: $small-content-font-size
-  +text-ellipsis
-
-.cms-clv-crisisDate, .cms-clv-crisisTime
-  font-family: $std-font-normal
-  font-size: $small-content-font-size
-
-.cms-clv-crisisDurationTime
-  font-family: $std-font-normal
-  font-size: $small-content-font-size
-  color: $blue
-
-.cms-clv-crisisDuration
-  //can be removed
+//.cms-crisis-list-container
+//  padding: $zero
+//
+//  .cms-crisis-item
+//    margin: $zero
+//    +border-position('bottom', $grey3)
+//    list-style-type: none
+//    padding: $std-side-spacing $zero
+//
+//    .cms-list-icon
+//      background: url("../../images/warning_icon.svg") no-repeat
+//      height: $crisis-list-icon-height
+//      width: $crisis-list-icon-width
+//      margin: $std-side-spacing 10px
+//      background-size: cover
+//
+//    //Do we need this...?
+//    .cms-list-icon-text
+//      text-align: center
+//      font-family: $std-font-normal
+//      font-size: $content_large_font
+//      color: $white
+//
+//    .cms-crisis-text
+//      display: inline-block
+//      width: 65%
+//
+//      .cms-crisis-type
+//        +text-ellipsis
+//
+//      .cms-crisis-duration
+//        color: $blue
+//
+//    .cms-crisis-duration-container
+//      padding: 10% $zero
+//      margin-right: $std-side-spacing
+//
+//      .cms-nav-icon
+//        padding-left: $crisis-item-spacing
+//        background: url("../../images/icon_listnav.svg") right no-repeat
+//        background-size: $crisis-item-spacing
