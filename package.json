@@ -1,28 +1,30 @@
 {
-    "name": "CrisisManagement",
-    "version": "1.0.0",
-    "description": "Manage Crisis across ebay branches",
-    "main": "bootstrap.js",
-    "repository": "https://github.com/palanii/Crisis_Management",
-    "directories": {
-        "test": "test"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "crisis management",
-        "crisis"
-    ],
-    "author": "Palanisamy Thangamuthu",
-    "license": "GPL",
-    "devDependencies": {
-        "connect-livereload": "^0.4.0",
-        "grunt": "^0.4.5",
-        "grunt-contrib-connect": "^0.8.0",
-        "grunt-contrib-copy": "^0.5.0",
-        "grunt-contrib-sass": "^0.8.1",
-        "grunt-contrib-uglify": "^0.6.0",
-        "grunt-contrib-watch": "^0.6.1"
-    }
+  "name": "CrisisManagement",
+  "version": "1.0.0",
+  "description": "Manage Crisis across ebay branches",
+  "main": "bootstrap.js",
+  "repository": "https://github.com/palanii/Crisis_Management",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crisis management",
+    "crisis"
+  ],
+  "author": "Palanisamy Thangamuthu",
+  "license": "GPL",
+  "devDependencies": {
+    "connect-livereload": "^0.4.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-env": "^0.4.1",
+    "grunt-preprocess": "^4.0.0"
+  }
 }

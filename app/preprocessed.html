@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+    <script type="text/javascript" src="scripts/vendors/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/vendors/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="scripts/vendors/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <script type="text/javascript" src="scripts/vendors/script.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/vendors/moment.js"></script>
+    <!-- @if NODE_ENV='PRODUCTION' -->
+    <script src="/cordova.js"></script>
+    <!-- @endif -->
+    <!-- @if NODE_ENV='DEVELOPMENT' -->
+    <script src="http://localhost:35729/livereload.js"></script>
+    <!-- @endif -->
+</head>
+<body>
+<loader></loader>
+<div data-ng-include data-src="'views/header.html'"></div>
+<error-messages></error-messages>
+<!-- Views are injected here -->
+
+<div ng-view></div>
+<div class="navbar-fixed-bottom cms-footer" data-ng-include data-src="'views/footer.html'"></div>
+</body>
+
+</html>
