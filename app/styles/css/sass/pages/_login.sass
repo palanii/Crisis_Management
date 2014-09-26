@@ -1,59 +1,33 @@
 .cms-login-masterContainer
-  height: 90%
   margin: 68px $std-side-spacing $std-top-spacing
-  font-family: $std-font-normal
 
+  .cms-input
+    color: $black
+    font-size: $base-font-size
+    font-family: $std-font-light
+    margin-top: $big-spacing
 
-.cms-login-inputControl
-  color: $black
-  font-size: $base-font-size
-  font-family: $std-font-light
-  @extend .cms-input
+  .form-button
+    margin-top: $big-spacing
+
 
 .cms-login-headerLabel
-  color: $black
-  font-size: 90pt
+  +label-text($black, 90pt, $std-font-ultra-light, 0)
   text-align: center
   line-height: 100px
-  font-family: $std-font-ultra-light
 
 .cms-login-headerLabelPart2
-  color: $black
-  font-size: 20pt
+  +label-text($black,20pt, $std-font-light, $std-side-spacing $zero $big-spacing)
   text-align: center
   line-height: 22px
-  padding: $std-side-spacing $zero $big-spacing
-  font-family: $std-font-light
-
-.cms-login-form
-  padding-top: $big-spacing
-
-.cms-login-password
-  margin-top: $big-spacing
-
-.cms-login-loginUser
-  +cms-color-button($blue2,$blue3,$white)
-  margin-top: $big-spacing
 
 /*Offline mode code
-
 .cms-login-masterContainer-offline
   margin: 47.5px $std-side-spacing
-
-.cms-login-walletCardSeparator
-  +border-position('top', $faded-grey)
-  margin-top: $big-spacing
 
 .cms-login-walletCardContainer
   margin-top: $std-top-spacing
   text-align: center
 
-.cms-login-walletCard-icon
-  content: url('../../images/icon-wallet-card.png')
-  width: 40px
-
 .cms-login-walletCardText
-  margin-left: $std-top-spacing
-  color: $blue1
-  font-size: $content_small_size
-  font-family: $std-font-light
+  +label-text($blue, $content_small_size, $std-font-light, $std-top-spacing)
