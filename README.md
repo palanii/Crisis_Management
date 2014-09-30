@@ -21,3 +21,19 @@
 	_helpers.sass
 	_layout.sass
 	_components.sass
+	
+	
+1. For loading front-end dependencies using bower
+.bowerrc
+{
+  "directory" : "app/bower_components"
+}	
+2. Add this to packages.json
+"postinstall": "bower install"
+3. Sample bower dependencies
+	"jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "moment": "~2.8.3",
+    "underscore": "~1.7.0",
+    "angular": "~1.2.25",
+    "angular-route": "~1.2.25"
