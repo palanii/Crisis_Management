@@ -2,6 +2,14 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        env: {
+            dev: {
+                NODE_ENV: 'DEVELOPMENT'
+            },
+            prod: {
+                NODE_ENV: 'PRODUCTION'
+            }
+        },
         sass: {
             dev: {
                 options: {
@@ -13,11 +21,20 @@ module.exports = function(grunt) {
                     src: ['app/styles/css/main.sass'],
                     ext: '.css'
                 }]
+            },
+            build: {
+                options: {
+                    style: 'compressed',
+                    sourcemap: 'none'
+                },
+                files: {
+                    'build/styles/css/main.css': 'app/styles/css/main.sass'
+                }
             }
         },
         copy: {
             main: {
-                src: ['**/*', '!**/*.js'],
+                src: ['**/*', '!**/*.js', 'scripts/**/*.js'],
                 expand: true,
                 cwd: 'app',
                 dest: 'build'
@@ -33,7 +50,7 @@ module.exports = function(grunt) {
             my_target: {
                 files: [{
                     expand: true,
-                    src: ['**/*.js'],
+                    src: ['**/*.js', '!scripts/**/*.js'],
                     dest: 'build',
                     cwd: 'app',
                     ext: '.js'
@@ -51,10 +68,20 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['app/styles/css/**/*.sass'],
-                tasks: ['sass'],
+                tasks: ['sass:dev'],
                 options: {
                     livereload: true
                 }
+            }
+        },
+        preprocess: {
+            dev: {
+                src: 'app/preprocessed.html',
+                dest: 'app/index.html'
+            },
+            prod: {
+                src: 'app/preprocessed.html',
+                dest: 'build/index.html'
             }
         }
     });
@@ -64,8 +91,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-env');
+    grunt.loadNpmTasks('grunt-preprocess');
 
     // task setup 
-    grunt.registerTask('dev', ['connect', 'watch']);
-    grunt.registerTask('build', ['copy', 'uglify']);
+    grunt.registerTask('dev', ['env:dev', 'preprocess:dev','connect', 'watch']);
+    grunt.registerTask('build', ['copy','env:prod', 'preprocess:prod', 'sass:build', 'uglify']);
 };
