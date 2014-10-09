@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         },
         copy: {
             main: {
-                src: ['**/*', '!**/*.js', 'scripts/**/*.js'],
+                src: ['**/*', '!**/*.js', '!preprocessed.html', 'scripts/**/*.js'],
                 expand: true,
                 cwd: 'app',
                 dest: 'build'
